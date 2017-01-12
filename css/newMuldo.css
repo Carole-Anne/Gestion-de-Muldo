@@ -1,0 +1,156 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+html {
+    margin : 0;
+    padding: 0;
+    min-width : 750px;
+    min-height: 400px;
+}
+section#Femelle {
+    float : left;
+    width: 25%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#Male {
+    float : right;
+    width: 25%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#Femelle > section#mere,
+section#Male > section#pere{
+    margin: auto;
+    color: white;
+    width: 80%;
+    height: 80%;
+}
+
+section#mere > ul#listeMuldo,
+section#pere > ul#listeMuldo{
+    list-style-type: none;
+    height: 20%; 
+    width: 80%;
+}
+
+section#imgPere,
+section#imgMere,
+section#imgEnfantNew {
+    height: 80px;
+    width: 80px;
+}
+
+
+div {
+    clear: both;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+input[type="radio"]:checked+label.sexe {
+  outline: 3px solid #0f0;
+}
+
+input[type="radio"].muldo:checked+label {
+  background: #F88E38;
+}
+
+
+section#Middle {
+    overflow: hidden;
+    background: #6A6562;
+    height: 100vh;
+    min-width : 350px;
+    min-height: 400px;
+}
+
+section#Middle > section#espaceHaut{
+    height: 6vh;
+    width: 100%; 
+}
+
+select{
+    background: #574F4D;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px; 
+    color: white;
+    overflow-y: scroll;
+}
+
+input{
+    background: #574F4D;
+    color: white;
+    border-color: black;
+}
+
+button,
+#sub,
+#annuler{
+    background: linear-gradient(to bottom, #FF8D2A, #B9450A);
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px; 
+    cursor: pointer;
+    color: black;
+}
+
+div#tableau{
+    width: 100%;
+    height: 50%; 
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+.ligne{
+    width: 100%;
+}
+
+.cell{
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}/*
+.cell{
+    display: block;
+    line-height: 11px;
+    vertical-align: middle;
+}*/
+
+.cell:hover{
+    background-color: #F88E38; 
+    cursor: pointer;
+}
+
+.cell:checked{
+  outline: 3px solid #0f0;
+}
+
+
+.pair{
+    display: block;
+    background: #6A6562;
+}
+
+.impair{
+    display: block;
+    background: #7E7673;
+}
+

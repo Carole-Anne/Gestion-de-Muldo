@@ -1,0 +1,64 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+html {
+    margin : 0;
+    padding: 0;
+    min-width : 750px;
+    min-height: 400px;
+}
+
+section#gauche {
+    float : left;
+    width: 20%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#droite{
+    float : right;
+    width: 20%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#action{
+    margin: auto;
+    color: white;
+    width: 80%;
+    height: 60%;
+}
+
+section#milieu{
+    display: flex;
+    overflow: hidden;
+    background: #6A6562;
+    width: 60%;
+    height: 100vh;
+    min-width : 350px;
+    min-height: 400px;
+}
+
+.centre{
+    margin: auto;
+    color : white;
+    height: 70%;
+    width: 70%; 
+}
+
+button{
+    background: linear-gradient(to bottom, #FF8D2A, #B9450A);
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px; 
+    cursor: pointer;
+    width: 80px;
+}

@@ -1,0 +1,170 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+html {
+    margin : 0;
+    padding: 0;
+    min-width : 750px;
+    min-height: 400px;
+}
+
+section#Femelle {
+    float : left;
+    width: 25%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#Male {
+    float : right;
+    width: 25%;
+    height: 100vh;
+    background: #38302D;
+    display: flex;
+    min-width : 200px;
+    min-height: 400px;
+}
+
+section#Femelle > section#listeF, 
+section#Male > section#listeM{
+    margin: auto;
+    color: white;
+    width: 80%;
+    height: 60%;
+}
+
+section#Middle > section#bouton{
+    margin: 0 auto;
+}
+
+section#espace2 {
+    height: 6vh;
+    width: 100%; 
+}
+
+section#Croisement {
+    height: 70vh;
+    width: 100%; 
+    clear: both;
+}
+
+section#espace {
+    overflow: hidden;
+    height: 10%;
+}
+
+section#imgFemelle,
+section#imgMale,
+section#imgEnfant{
+    height: 80px;
+    width: 80px;
+}
+
+div {
+    clear: both;
+}
+
+div#tableau{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+div#coprsTableau{
+    display: table-row-group;
+    width: 100%;
+    height: 100%;
+}
+
+div#ligne1,
+div#ligne2{
+    display: table-row;
+    height: 50%;
+}
+
+div#cell{
+    display: table-cell;
+    width: 33%;
+}
+
+button{
+    background: linear-gradient(to bottom, #FF8D2A, #B9450A);
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px; 
+    cursor: pointer;
+}
+
+select{
+    background: #574F4D;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px; 
+    color: white;
+    overflow-y: scroll;
+}
+
+section#Middle {
+    overflow: hidden;
+    background: #6A6562;
+    height: 100vh;
+    min-width : 350px;
+    min-height: 400px;
+}
+
+section#Middle > section#espaceHaut{
+    height: 6vh;
+    width: 100%; 
+}
+
+div#tableauMuldo{
+    height: 70%; 
+    width: 90%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+.cell{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.cell:hover{
+    background-color: #F88E38; 
+    cursor: pointer;
+}
+
+.cell:checked{
+  outline: 3px solid #0f0;
+}
+
+.pair{
+    display: block;
+    background: #6A6562;
+}
+
+.impair{
+    display: block;
+    background: #7E7673;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+input[type="radio"]:checked+label.sexe {
+  outline: 3px solid #0f0;
+}
+
+input[type="radio"].muldo:checked+label {
+  background: #F88E38;
+}
